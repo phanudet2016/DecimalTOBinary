@@ -29,6 +29,7 @@ export default {
         n = n * 10
       }
       // console.log(this.dec, this.bin)
+      this.bin = this.bin.toString().replace(/\B(?=(\d{4})+(?!\d))/g, ' ')
       this.dec = ''
     }
     // cal () {
